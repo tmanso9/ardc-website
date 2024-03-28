@@ -25,6 +25,7 @@ describe('testing NotFound404.js', () => {
     const page = renderer.create(<NotFound404 {...translationProps} />).toJSON();
 
     expect(page).toMatchSnapshot();
+    expect(page).toBe(null);
   });
 });
 
